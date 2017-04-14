@@ -7,7 +7,7 @@
   <xacro:ur3_robot prefix="ur3_" joint_limited="true"/>
 
   <joint name="ur3_joint" type="fixed">
-    <parent link="mid_mount" />
+    <parent link="front_mount" />
     <child link = "ur3_base_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
   </joint>
