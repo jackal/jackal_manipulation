@@ -6,6 +6,5 @@
 
   <xacro:m1n4a200 base_parent="mid_mount"/>
 
-
   
 </robot>
