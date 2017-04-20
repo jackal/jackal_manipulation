@@ -13,7 +13,7 @@
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roslaunch</build_depend>
   <run_depend>jackal_description</run_depend>
-  <run_depend>ur_description</run_depend>
+  <run_depend>kinova_description</run_depend>
 
   <export>
   </export>

@@ -2,14 +2,10 @@
 <robot name="jackal" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:include filename="$(find jackal_description)/urdf/jackal.urdf.xacro"/>
-  <xacro:include filename="$(find ur_description)/urdf/ur3.urdf.xacro"/>
+  <xacro:include filename="$(find kinova_description)/urdf/m1n4a200.xacro"/>
+
+  <xacro:m1n4a200 base_parent="mid_mount"/>
+
+
   
-  <xacro:ur3_robot prefix="ur3_" joint_limited="true"/>
-
-  <joint name="ur3_joint" type="fixed">
-    <parent link="mid_mount" />
-    <child link = "ur3_base_link" />
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
-  </joint>
-
 </robot>
