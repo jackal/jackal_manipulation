@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: jackal_description
+    relative_path: urdf/jackal.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/jackal.srdf
+  CONFIG:
+    author_name: Chris Iverach-Brereton
+    author_email: civerachb@clearpathrobotics.com
+    generated_timestamp: 1619708132
