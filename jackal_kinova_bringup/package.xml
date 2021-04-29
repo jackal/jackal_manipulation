@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>husky_kinova_bringup</name>
-  <version>0.0.0</version>
-  <description>The husky_kinova_bringup package</description>
+  <name>jackal_kinova_bringup</name>
+  <version>0.5.3</version>
+  <description>The jackal_kinova_bringup package</description>
 
   <maintainer email="dniewinski@clearpathrobotics.com">Dave Niewinski</maintainer>
 
