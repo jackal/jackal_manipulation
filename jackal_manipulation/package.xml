@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>jackal_manipulator</name>
+  <name>jackal_manipulation</name>
   <version>0.5.3</version>
   <description>Meta-package for installing all Jackal manipulator support</description>
 

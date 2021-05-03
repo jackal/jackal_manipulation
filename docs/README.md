@@ -129,7 +129,7 @@ If that worked properly, you should see the arm positioned properly in RVIZ or y
 MoveIt! is the planning and execution interface for the arm.  It runs separately from the driver.  Run the MoveIt! configuration you created above with
 
 ```
-roslaunch dummy_moveit_config jackal_gen3_lite_moveit_planning_execution.launch
+roslaunch jackal_gen3_lite_moveit_config jackal_gen3_lite_moveit_planning_execution.launch
 ```
 
 You should see no errors coming up in the terminal.  You should now be able to add the Moveit MotionPlanning plugin in RVIZ and command the arm around!
