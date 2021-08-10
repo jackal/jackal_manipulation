@@ -14,11 +14,6 @@ install(DIRECTORY urdf
 )
 
 install(PROGRAMS
-  scripts/setup_jackal_dual_gen3_envar
-  scripts/setup_jackal_dual_gen3_robotiq_2f_85_envar
-  scripts/setup_jackal_dual_gen3_robotiq_2f_140_envar
-  scripts/setup_jackal_gen3_envar
-  scripts/setup_jackal_gen3_robotiq_2f_85_envar
-  scripts/setup_jackal_gen3_robotiq_2f_140_envar
+  scripts/setup_jackal_gen3_lite_envar
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
