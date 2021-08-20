@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xi="http://www.w3.org/2001/XInclude" 
+    xmlns:gazebo="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" 
+    xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" 
+    xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" 
+    xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body" 
+    xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom" 
+    xmlns:joint="http://playerstage.sourceforge.net/gazebo/xmlschema/#joint" 
+    xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller" 
+    xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" 
+    xmlns:rendering="http://playerstage.sourceforge.net/gazebo/xmlschema/#rendering" 
+    xmlns:renderable="http://playerstage.sourceforge.net/gazebo/xmlschema/#renderable" 
+    xmlns:physics="http://playerstage.sourceforge.net/gazebo/xmlschema/#physics" 
+    xmlns:xacro="http://www.ros.org/wiki/xacro" name="j2s6s300">
+
+  <xacro:arg name="prefix" default="kinova_arm" />	
+
+  <!-- Auxiliary Link -->	
+  <link name="jaco2_mount"/>
+  <joint name="jaco2_mount_joint" type="fixed">
+    <origin xyz="$(optenv JACKAL_KINOVA_XYZ 0.0 0.0 0.0)" rpy="$(optenv JACKAL_KINOVA_RPY 0 0 0)"/>
+    <parent link="$(optenv JACKAL_KINOVA_MOUNT mid_mount)" />
+    <child link="jaco2_mount" />
+  </joint>
+
+  <!--Jaco2 Robot -->
+  <xacro:include filename="$(find kinova_description)/urdf/j2n6s300.xacro"/>
+  <xacro:j2n6s300 base_parent="jaco2_mount" prefix="$(arg prefix)"/> 
+
+</robot>
