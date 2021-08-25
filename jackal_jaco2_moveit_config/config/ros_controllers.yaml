@@ -43,3 +43,11 @@ controller_list:
       - kinova_arm_joint_4
       - kinova_arm_joint_5
       - kinova_arm_joint_6
+  - name: kinova_arm_gripper
+    action_ns: gripper_command
+    default: True
+    type: GripperCommand
+    joints:
+      - kinova_arm_joint_finger_1
+      - kinova_arm_joint_finger_2
+      - kinova_arm_joint_finger_3
