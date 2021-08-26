@@ -63,7 +63,6 @@
     <disable_collisions link1="chassis_link" link2="rear_fender_link" reason="Adjacent" />
     <disable_collisions link1="chassis_link" link2="rear_left_wheel_link" reason="Adjacent" />
     <disable_collisions link1="chassis_link" link2="rear_right_wheel_link" reason="Adjacent" />
-    <disable_collisions link1="chassis_link" link2="velodyne" reason="Adjacent" />
     <disable_collisions link1="front_fender_link" link2="front_left_wheel_link" reason="Never" />
     <disable_collisions link1="front_fender_link" link2="front_right_wheel_link" reason="Never" />
     <disable_collisions link1="front_fender_link" link2="kinova_arm_link_1" reason="Never" />
@@ -72,7 +71,6 @@
     <disable_collisions link1="front_fender_link" link2="rear_fender_link" reason="Default" />
     <disable_collisions link1="front_fender_link" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="front_fender_link" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="front_fender_link" link2="velodyne" reason="Never" />
     <disable_collisions link1="front_left_wheel_link" link2="front_right_wheel_link" reason="Never" />
     <disable_collisions link1="front_left_wheel_link" link2="kinova_arm_link_1" reason="Never" />
     <disable_collisions link1="front_left_wheel_link" link2="kinova_arm_link_2" reason="Never" />
@@ -81,7 +79,6 @@
     <disable_collisions link1="front_left_wheel_link" link2="rear_fender_link" reason="Never" />
     <disable_collisions link1="front_left_wheel_link" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="front_left_wheel_link" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="front_left_wheel_link" link2="velodyne" reason="Never" />
     <disable_collisions link1="front_right_wheel_link" link2="kinova_arm_link_1" reason="Never" />
     <disable_collisions link1="front_right_wheel_link" link2="kinova_arm_link_2" reason="Never" />
     <disable_collisions link1="front_right_wheel_link" link2="kinova_arm_link_base" reason="Never" />
@@ -89,7 +86,6 @@
     <disable_collisions link1="front_right_wheel_link" link2="rear_fender_link" reason="Never" />
     <disable_collisions link1="front_right_wheel_link" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="front_right_wheel_link" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="front_right_wheel_link" link2="velodyne" reason="Never" />
     <disable_collisions link1="kinova_arm_link_1" link2="kinova_arm_link_2" reason="Adjacent" />
     <disable_collisions link1="kinova_arm_link_1" link2="kinova_arm_link_3" reason="Never" />
     <disable_collisions link1="kinova_arm_link_1" link2="kinova_arm_link_4" reason="Never" />
@@ -98,7 +94,6 @@
     <disable_collisions link1="kinova_arm_link_1" link2="rear_fender_link" reason="Never" />
     <disable_collisions link1="kinova_arm_link_1" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="kinova_arm_link_1" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="kinova_arm_link_1" link2="velodyne" reason="Never" />
     <disable_collisions link1="kinova_arm_link_2" link2="kinova_arm_link_3" reason="Adjacent" />
     <disable_collisions link1="kinova_arm_link_2" link2="kinova_arm_link_4" reason="Never" />
     <disable_collisions link1="kinova_arm_link_2" link2="kinova_arm_link_base" reason="Never" />
@@ -140,7 +135,6 @@
     <disable_collisions link1="kinova_arm_link_base" link2="rear_fender_link" reason="Never" />
     <disable_collisions link1="kinova_arm_link_base" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="kinova_arm_link_base" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="kinova_arm_link_base" link2="velodyne" reason="Adjacent" />
     <disable_collisions link1="kinova_arm_link_finger_1" link2="kinova_arm_link_finger_2" reason="Never" />
     <disable_collisions link1="kinova_arm_link_finger_1" link2="kinova_arm_link_finger_3" reason="Never" />
     <disable_collisions link1="kinova_arm_link_finger_1" link2="kinova_arm_link_finger_tip_1" reason="Adjacent" />
@@ -154,11 +148,7 @@
     <disable_collisions link1="navsat_link" link2="rear_fender_link" reason="Never" />
     <disable_collisions link1="navsat_link" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="navsat_link" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="navsat_link" link2="velodyne" reason="Never" />
     <disable_collisions link1="rear_fender_link" link2="rear_left_wheel_link" reason="Never" />
     <disable_collisions link1="rear_fender_link" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="rear_fender_link" link2="velodyne" reason="Never" />
     <disable_collisions link1="rear_left_wheel_link" link2="rear_right_wheel_link" reason="Never" />
-    <disable_collisions link1="rear_left_wheel_link" link2="velodyne" reason="Never" />
-    <disable_collisions link1="rear_right_wheel_link" link2="velodyne" reason="Never" />
 </robot>
