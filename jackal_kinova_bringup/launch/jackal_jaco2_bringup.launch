@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="kinova_robotType" default="j2n6s300" />
+  <arg name="kinova_robotName" default="kinova_arm"/>
+	<arg name="kinova_robotSerial" default="not_set" />
+	<arg name="use_jaco_v1_fingers" default="false" />
+	<arg name="feedback_publish_rate" default="0.1" />
+
+  <!-- If the node handles multiple robots uncomment this and configure /config/multiple_robots.yaml" -->
+	<rosparam file="$(find kinova_bringup)/launch/config/multiple_robots.yaml" command="load" />
+
+  <node name="$(arg kinova_robotName)_driver" pkg="kinova_driver" type="kinova_arm_driver" output="screen" cwd="node" args="$(arg kinova_robotType)">
+    <rosparam file="$(find kinova_bringup)/launch/config/robot_parameters.yaml" command="load" />
+    <param name="serial_number" value="$(arg kinova_robotSerial)" />   
+    <param name="robot_name" value="$(arg kinova_robotName)" />   
+    <param name="robot_type" value="$(arg kinova_robotType)" />   
+    <param name="use_jaco_v1_fingers" value="$(arg use_jaco_v1_fingers)" />   
+    <param name="status_interval_seconds" value="$(arg feedback_publish_rate)" />
+  </node>
+    
+
+  <node name="joint_state_relay" type="relay" pkg="topic_tools" args="/$(arg kinova_robotName)_driver/out/joint_state /joint_states" />
+
+  <!-- Run joint trajectory action server, which receives planned motion goal under "follow_joint_trajectory", and publish ROS standard trajectory via topic "command". Then for specified robot, the trajectory will be interpreted to their own joint trajectory controller -->
+  <node name="$(arg kinova_robotName)_joint_trajectory_action_server" pkg="kinova_driver" type="joint_trajectory_action_server" output="screen" respawn="false" args="$(arg kinova_robotName)"/>
+
+  <!-- Run gripper command action server, which receives planned motion goal under "gripper_command". After receiving the command from Moveit Rviz Plugin, this node act as an actionlib client and send the goal to the finger position action server from kinova_driver.  -->
+  <node name="$(arg kinova_robotName)_gripper_command_action_server" pkg="kinova_driver" type="gripper_command_action_server" output="screen" respawn="false" args="$(arg kinova_robotName)"/>
+
+</launch>
