@@ -49,7 +49,7 @@ The jackal_manipulator package has moveit configs setup already.  That config sh
 Go into the src folder in your workspace and run the command below:
 
 ```
-rosrun jackal_gen3_moveit_config customize_moveit.sh <new_package_name>
+rosrun jackal_gen3_lite_moveit_config customize_moveit.sh <new_package_name>
 ```
 
 That command will make a new moveit package in your src folder that should be ready for customization to your actual platform.
