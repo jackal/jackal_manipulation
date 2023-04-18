@@ -38,7 +38,7 @@ controller_list:
       - kinova_arm_joint_5
       - kinova_arm_joint_6
       - kinova_arm_joint_7
-  - name: kinova_arm/robotiq_2f_85_gripper_controller
+  - name: kinova_arm/kinova_arm_robotiq_2f_85_gripper_controller
     action_ns: gripper_cmd
     default: True
     type: GripperCommand
