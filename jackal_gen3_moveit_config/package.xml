@@ -1,11 +1,11 @@
 <package>
   <name>jackal_gen3_moveit_config</name>
-  <version>0.3.0</version>
+  <version>0.0.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the husky with the MoveIt! Motion Planning Framework
   </description>
-  <author email="dniewinski@clerpathrobotics.com">Dave Niewinski</author>
-  <maintainer email="dniewinski@clerpathrobotics.com">Dave Niewinski</maintainer>
+  <author email="lcamero@clerpathrobotics.com">Luis Camero</author>
+  <maintainer email="lcamero@clerpathrobotics.com">Luis Camero</maintainer>
 
   <license>BSD</license>
 
